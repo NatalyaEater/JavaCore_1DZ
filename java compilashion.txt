@@ -1,0 +1,7 @@
+PS D:\java\JavaCore_1DZ\src\main> javac -encoding utf-8 -sourcepath ./java -d out java/org/example/main/Main.java
+PS D:\java\JavaCore_1DZ\src\main> java -classpath ./out org.example.main.Main
+
+
+PS D:\java\JavaCore_1DZ\src\main> docker build . -t javacore1
+PS D:\java\JavaCore_1DZ\src\main> docker run -i javacore1
+PS D:\java\JavaCore_1DZ\src\main> javadoc -encoding utf8 -d docs -sourcepath ./java -cp ./out -subpackages org
